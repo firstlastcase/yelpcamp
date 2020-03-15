@@ -1,5 +1,6 @@
 // ########## ########## ########## ########## ########## ##########  
 // ########## in this version (v7), cleaning the code by adding routes directory
+// this is not exactly matching colt steele's v7 of the code.
 // ########## ########## ########## ########## ########## ########## 
 var bodyParser  = require("body-parser"),
     mongoose    = require("mongoose"),
