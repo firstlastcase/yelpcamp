@@ -1,0 +1,48 @@
+<%- include("partials/header") %>
+
+<div class="container">
+    <!--<h1>Yelp Camp!</h1>-->
+    <!--this is the bootstrap carousel start code-->
+        <div id="carouselIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner carousel-fade">
+                <div class="carousel-item active" data-interval="2000">
+                    <img class="d-block w-100" src="https://images.unsplash.com/photo-1533575770077-052fa2c609fc" alt="First slide" style="opacity: 0.9;">
+                    <div class="carousel-caption d-none d-lg-block">
+                        <h1>Your local guide to campgrounds</h1>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="2000">
+                    <img class="d-block w-100" src="https://images.unsplash.com/photo-1563466543438-7cd384614d8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="Second slide" style="opacity: 0.9;">
+                    <div class="carousel-caption d-none d-lg-block">
+                        <h1>All around NSW / Australia</h1>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="3000">
+                    <img class="d-block w-100" src="https://images.unsplash.com/photo-1523497873958-8639c94677f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1955&q=80" alt="Third slide" style="opacity: 0.9;">
+                    <div class="carousel-caption d-none d-lg-block">
+                        <h1>Click below to go to campgrounds, Add your own, and Enjoy!</h1>
+                    </div>
+                    
+                </div>
+            </div>
+          
+            <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    
+    <!--end of the bootstrap carousel code-->
+    
+    <a href="/campgrounds"><h2><strong>Go to Campgrounds page</strong></h2></a>
+</div>
+<%- include("partials/footer") %>

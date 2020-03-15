@@ -1,0 +1,25 @@
+<%- include("../partials/header") %>
+
+    <div class="container">
+        <div class="jumbotron">
+            <div>
+                 <h1>Campgrounds in NSW</h1>
+                 <p>your local campground guide!</p>
+                 <a class="btn btn-primary btn-large" href="/campgrounds/new">Add a New One!</a>
+            </div>
+        </div>
+       
+        <div class="myGrid">
+            <% campgrounds.forEach(function(campground){ %>
+            <div class="myGridItem">
+                <img class="campgroundImage" src="<%= campground.image %>"> 
+                <h5><%= campground.name %> </h5>
+                <p>lorem ipsum lorem ipsum lorem ipsum</p>
+                <a href="/campgrounds/<%=campground._id%>" class="btn btn-primary">More Info!</a>
+            </div>
+            <% }); %>
+        </div>
+        
+        
+    </div>
+<%- include("../partials/footer") %>
